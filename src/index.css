@@ -1,0 +1,250 @@
+:root {
+    --orange: #fd6018; /* Darkened orange */
+    --ivory: #FFFFF0;
+    --awhite : #ff8c4d ;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Almarai', sans-serif; /* Change to Almarai font */
+    background-color: var(--ivory);
+    min-height: 100vh;
+    position: relative;
+    direction: rtl; /* Set text direction to right-to-left */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px; /* Adjust this value to lower the navbar */
+}
+.logo-space {
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: right; /* Align text to the right */
+}
+.nav-link:hover {
+    color: var(--ivory);
+    background-color: rgba(239, 243, 24, 0.2); 
+    transform: scale(1.1) rotate(9deg);
+    border-radius: 5px; 
+} 
+
+.content {
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+    text-align: right; /* Align content to the right */
+}
+
+.footer {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.5rem; /* Reduced padding for a smaller footer */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.3rem; /* Optional: Adjust font size for a more compact look */
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.footer a:hover {
+    transform: scale(0.9); /* Scale down on hover */
+    color: rgba(255, 255, 255, 0.8); /* Slightly change color on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: var(--orange);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 0.5rem;
+    text-align: right; /* Align heading to the right */
+}
+
+.scout-law-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: right; /* Align list items to the right */
+}
+
+.scout-law-item {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.scout-law-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 3rem; /* Space between boxes */
+}
+
+.scout-law-box {
+    position: relative; /* Position relative for absolute positioning of the image */
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 calc(30% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scout-law-image {
+    position: absolute; 
+    top: 10px;  
+    left: 10px; 
+    width: 40px; 
+    height: auto; 
+}
+
+.scout-law-text {
+    margin-top: 50px; /* Add margin to avoid overlap with the image */
+}
+
+.scout-law-box:hover {
+    transform: translateY(-5px); /* Move the box up slightly on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.header-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header-image {
+    width: 50px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+    margin-left : 25px /* Space between the image and the heading */
+}
+
+.info-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin: 20px 0; /* Add some margin above and below */
+    padding: 10px; /* Add some padding */
+    background-color: var( --awhite ) ; /* Optional: background color */
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+  
+  .info-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between the image and text */
+  }
+
+  .info-text {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    font-weight: bolder ; 
+    font-style: italic ;
+  }
+
+  .info-text-container {
+    display: flex;
+    flex-direction: column; /* Stack texts vertically */
+  }
+/*   .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+ */
+  .polaroid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts spacing between polaroids */
+    margin-top: 20px; /* Space above the polaroid section */
+  }
+  
+  .polaroid {
+    background: var(--awhite);
+    border: 1px solid var(--orange);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    text-align: center; /* Center text */
+    opacity: 0; /* Start hidden for fade-in effect */
+    transform: translateY(20px); /* Start slightly lower for the animation */
+    transition: opacity 3s , transform 0.5s ;
+  }
+  
+  .polaroid-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for the image */
+  }
+  
+  .polaroid-text {
+    margin-top: 10px; /* Space between image and text */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Text color */
+  }
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+
+  .polaroid {
+    animation: fadeIn 0.5s forwards; 
+  }
+  .promise-page-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px; /* Add some padding */
+  }
+  
+  .promise-page-container h1 {
+    margin-right: 20px; /* Space between the h1 and the image */
+  }
+  
+  .promise-page-container p {
+    background-color: var(--awhite); /* Use the variable for background color */
+    color: black; /* Set text color to black */
+    font-weight: bold; /* Make text bold */
+    padding: 10px; /* Add some padding inside the paragraph */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
